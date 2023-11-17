@@ -34,7 +34,7 @@ public class ListeMonuments {
             List<Monument> monuments = (List<Monument>)query.getResultList();
             
             for(Monument m1 : monuments) {
-             System.out.println(m1.getNom()+"  "+m1.getGeohash());
+             System.out.println(m1.getNom()+"  "+m1.getCodeLieu().getCodeInsee());
             }
             
             //On committe la transaction
